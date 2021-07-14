@@ -23,7 +23,7 @@ public class corsConfig {
 		
 		config.setAllowCredentials(false);
 		//configuração do filter do cors, 
-		config.setAllowedOrigins(Collections.singletonList("http://localhost:8080")); // esta sendo definido as origens q é permitida, o * sig q qualquer cliente vai conseguir fazer request com a api, http://localhost:9090/mycash apenas clientes com este host pode acessa api back-end
+		config.setAllowedOrigins(Collections.singletonList("*")); // esta sendo definido as origens q é permitida, o * sig q qualquer cliente vai conseguir fazer request com a api, http://localhost:9090/mycash apenas clientes com este host pode acessa api back-end
 		config.setAllowedMethods(Collections.singletonList("*")); // methods é post,get, delete, o * informa q todos os metodos podem ser utilizados
 		config.setAllowedHeaders(Collections.singletonList("*")); //leitura de heads, todos tipos de headers, ou headers especificos
 		
