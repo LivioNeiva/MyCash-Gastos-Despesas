@@ -27,3 +27,19 @@ c)	Usuarios.vue
 
 ### Alteramos o arquivo “router/index.js” adicionando as regras de navegação do Vue-Router. alteamos o modo de navegação de ‘createWebHashHistory’ para ‘createWebHistory’:
 
+## commit Axios e Vuex
+
+### Criamos o arquivo axiosConfig.js dentro do diretório services
+
+### Implementamos o componente Login.vue
+
+### De volta ao projeto Java, adicione a classe que configura o CORS
+
+### De volta ao projeto Vuejs, no componente Login.vue, importar o axiosConfig e implementar o método onSubmit.
+
+### Testamos o login. Verifiquei que o token está sendo armazenado no localStorage do navegador
+
+### Implementamos o Logout no botão do Topo.
+
+###
+

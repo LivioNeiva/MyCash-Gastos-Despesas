@@ -19,14 +19,13 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <router-link to="/" class="navbar-item">
+      <router-link to="/" class="navbar-item"><!-- a função to indica para onde ele tem q ir -->
         Lançamentos
       </router-link>
 
       <router-link to="/usuarios" class="navbar-item"> <!-- router-link to="" direciona para onde ai o link -->
         Usuários
       </router-link>
-
       
     </div>
 
@@ -34,11 +33,13 @@
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary">
-            <strong>Login</strong>
+            <router-link to="/login" class="button"> <!-- a função to indica para onde ele tem q ir, será redirecionado para componente login -->
+              Log in
+            </router-link>
           </a>
-          <a class="button is-light">
+          <button class="button is-danger" @click="onLogout"> <!-- onLogout é uma função está export default  -->
             Log out
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -49,7 +50,13 @@
 <!-- logica componente fica dentro do script -->
 <script>
 export default {
-
+ //o que ela vai fazeer é,criar uma funçao que apaga o token e redirecina para tela de login
+ methods: {
+   onLogout(){ //Login.vue foi add ao localStorage o mycash_token, com o token de acesso ao app back-end
+     localStorage.removeItem('mycash_token') //estamos apagando o mycash_token do localStorage
+     this.$router.push('/login') //direciona o router do @click para tela de login
+   }
+ }
 }
 </script>
 

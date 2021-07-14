@@ -1,4 +1,7 @@
 <template>
+  
+  <LancamentoForm />
+  
   <!-- esse Lancamento vai repetir cada lanc dos ids,descricao,data,valor,tipo.. q esta na função data, o v-for(mesmo q for(){}) faz uma interação em cada lista -->
   <!-- diretiva v-for, a diretiva key vai identificar cada elemento será feita aidentificaçao de cada obj e jogar para dentro componente Lancamento, ex. precisar remover um obj o key vai identificar qual obj sera removido -->
   <Lancamento
@@ -12,11 +15,11 @@
 <script>
 
   import Lancamento from "./Lancamento.vue" //importei o componente Lancamento esta mesma pasta lancamento
-
+  import LancamentoForm from "./LancamentoForm.vue"
 export default {
   components: { //temos fazer export do componente
 
-    Lancamento
+    Lancamento, LancamentoForm
   },
 
   data(){ //crianmos a função data para retornar um obj
