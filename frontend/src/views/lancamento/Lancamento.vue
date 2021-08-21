@@ -1,11 +1,19 @@
 <!-- criando a estrutura basica com vue -->
 <template>
     <!-- css de forma condicional quando se coloca numa expressao um valor ou outro -> se a classe lancamento.tipo for igual a DESPESA, add a class css lamcamento.despesa é borda vermelha q está em style, se nao, add classe lancamento.receita é borda verde -->
-   <!-- class="m-4 is-dark" -> clsse do bulmar, aumenta o espaço entre obj e outro na pagina -->
+   <!-- class="m-4 is-dark" - > clsse do bulmar, aumenta o espaço entre obj e outro na pagina -->
     <div class="m-4 is-dark" :class="[lancamento.tipo == 'DESPESA' ? 'despesa' : 'receita', 'lancamento' ]">
+        
         <!-- vamos criar um card, lancamento.descricao vem props lancamento-->
-        <h3> {{lancamento.descricao}} 
-        <i class="fas fa-times"></i> <!--"fas fa-times é uma classe da dependencia do font -->
+        
+        <h3> 
+            <a class="has-text-dark" 
+            @click="onClickDescricao(lancamento.id)">
+                {{lancamento.descricao}} 
+            </a>
+            <a class="icon icon-text" @click="excluirLancamento(lancamento.id)">             
+                <i class="fas fa-times"></i> <!--"fas fa-times é uma classe da dependencia do font -->
+            </a>
         </h3> <!-- esse valores vao fazer a interpolaçao de cada atributos  de cada um dos lancamentos-->
         
         <p>
@@ -18,9 +26,17 @@
 </template>
 
 <script>
+    import { mapActions } from 'vuex'
+
 export default {
     props: {
         lancamento: Object //chama as decrições estão dentro do componente Lancamentos
+    },
+    methods: {
+        ...mapActions(['selecionaLancamento', 'excluirLancamento']),
+        onClickDescricao(id){
+            this.selecionaLancamento(id)
+        }
     }
 
 }

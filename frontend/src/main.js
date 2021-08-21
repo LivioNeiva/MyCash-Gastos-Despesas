@@ -6,7 +6,7 @@ import store from './store'
  
 
 const app = createApp(App)
-
+//singleton global
 app.config.globalProperties.$filters = { //obj app vai ficar global e vamos filtar as propriedades
     currency(value){ //currency recebe um parametro
         var formatter = new Intl.NumberFormat('pt-BR', {//vamos formatar o parametro(value) portugues brasil

@@ -1,4 +1,5 @@
 <!-- tela de login ex da internet, link: https://codepen.io/stevehalford/pen/YeYEOR -->
+<!-- A view, que é apenas um mapeamento declarativo do estado -->
 <template> <!-- as class desse css pertence todas al bulma -->
   <div class="hero-body">
     <div class="container">
@@ -48,7 +49,7 @@ import createHttp from '@/services/axiosConfig.js'
 
 export default {
   //capturar os dados estao sendo inserido pelo usuario, funçao data
-
+  //states - O estado (state), que é a fonte da verdade que direciona nossa aplicação
   data(){
     return {
       email: '',
@@ -58,6 +59,7 @@ export default {
     }
 
   },
+  //As ações (actions), que são as possíveis maneiras pelas quais o estado pode mudar em reação às interações dos usuários da view.
   methods: {
     async onSubmit(e){
       e.preventDefault() //retira o reloud
@@ -109,3 +111,5 @@ export default {
 <style>
 
 </style>
+
+<!-- https://vuex.vuejs.org/ptbr/  estude -->
