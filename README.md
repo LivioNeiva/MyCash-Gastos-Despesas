@@ -5,6 +5,7 @@
 Projeto desenvolvido durante o Bootcamp Desenvolvimento Full Stack Java Spring Boot + Vue.js.
 
 ![GitHub language count](https://img.shields.io/github/languages/count/LivioNeiva/MyCash-Gastos-Despesas)
+![GitHub top language](https://img.shields.io/github/languages/top/LivioNeiva/MyCash-Gastos-Despesas)
 
 ### Camadas
 
