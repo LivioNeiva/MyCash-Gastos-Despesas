@@ -4,6 +4,8 @@
 
 Projeto desenvolvido durante o Bootcamp Desenvolvimento Full Stack Java Spring Boot + Vue.js.
 
+![GitHub language count](https://img.shields.io/github/languages/count/LivioNeiva/MyCash-Gastos-Despesas)
+
 ### Camadas
 
 <img src="https://user-images.githubusercontent.com/35788149/121291773-39dc9c00-c8bf-11eb-8f89-49b217d9b400.jpg" width="400px" alt=""/>
@@ -48,5 +50,7 @@ $ git clone <https://github.com/LivioNeiva/Mycash-Gastos.git>
 
 
 Feito com ❤️ por Livio Neiva
+
+
 
 [![Linkedin Badge](https://img.shields.io/badge/-Livio%20Neiva-blue?style=flat-square&logo=Linkedin&logoColor=white&https://www.linkedin.com/in/l%C3%ADvio-de-s-neiva-771145143/)](https://www.linkedin.com/in/l%C3%ADvio-de-s-neiva-771145143/)
