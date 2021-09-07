@@ -38,6 +38,7 @@ $ git clone <https://github.com/LivioNeiva/Mycash-Gastos.git>
 ```
 
 ### Tecnologias
+<img align="center" alt="livio-Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg">
 [OpenJDK](https://adoptopenjdk.net/)
 
 [Spring](https://spring.io/)
